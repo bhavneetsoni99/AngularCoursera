@@ -14,9 +14,23 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { DishDetailComponent } from "./dish-detail/dish-detail.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { AboutComponent } from "./about/about.component";
+import { HomeComponent } from "./home/home.component";
+import { ContactComponent } from "./contact/contact.component";
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, DishDetailComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    DishDetailComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+    ContactComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +41,7 @@ import { DishDetailComponent } from "./dish-detail/dish-detail.component";
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    AppRoutingModule,
   ],
   providers: [DishService],
   bootstrap: [AppComponent],
