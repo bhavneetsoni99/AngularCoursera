@@ -10,4 +10,7 @@ export class DishService {
   getDishes(): Dish[] {
     return DISHES;
   }
+  getDish(id: string): Dish {
+    return DISHES.find((d) => d.id === id) || DISHES[0];
+  }
 }
