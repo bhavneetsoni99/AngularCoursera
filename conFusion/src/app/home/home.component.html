@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+  <mat-card>
+    <mat-card-title> {{ featuredDish.name }}</mat-card-title>
+    <img mat-card-lg-image src="{{ featuredDish.image }}" />
+    <mat-card-content>
+      <p>{{ featuredDish.description }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-title> {{ featuredLeader.name }}</mat-card-title>
+
+    <img mat-card-lg-image src="{{ featuredLeader.image }}" />
+    <mat-card-content>
+      <p>{{ featuredLeader.designation }}</p>
+      <p>{{ featuredLeader.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
